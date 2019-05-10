@@ -10,5 +10,5 @@ app.use(json())
 app
   .get('/secret', sendIndexPage)
   .post('/secret', submitData)
-  .get('/secret/:name', getResult)
+  .get('/result/:name', getResult)
   .listen(PORT, () => console.log(`Listening to ${PORT}`))
